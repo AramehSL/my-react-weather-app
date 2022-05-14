@@ -1,0 +1,117 @@
+:root {
+  --gray-color: #353434;
+  --white: #fff;
+  --white-alpha-40: rgba(243, 236, 236, 0.507);
+  --white-alpha-25: rgba(255, 255, 255, 0.144);
+}
+
+.date-info {
+  text-align: center;
+  padding: 14px;
+  line-height: 1.8;
+}
+.day-name {
+  color: var(--white);
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Stardos Stencil", cursive;
+  margin-bottom: 5px;
+}
+
+.date-info {
+  font-size: 17px;
+  color: var(--gray-color);
+  font-family: "Roboto", sans-serif;
+}
+
+.degree,
+.temps,
+.city-name,
+#deg-celsius,
+#deg-fahrenheit {
+  font-family: "Fredericka the Great", cursive;
+}
+
+.info {
+  margin: 40px auto 0;
+}
+
+.current-tempreture {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.current-weather-status {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.deg-celsius,
+.deg-fahrenheit,
+.devider {
+  position: absolute;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--gray-color);
+  transition: all 0.5s ease-out;
+}
+
+.deg-celsius {
+  bottom: 110px;
+  left: 75px;
+}
+.devider {
+  bottom: 118px;
+  left: 110px;
+}
+.deg-fahrenheit {
+  bottom: 114px;
+  left: 125px;
+}
+
+.current-tempreture .active {
+  color: var(--white);
+  font-size: 24px;
+  cursor: default;
+}
+
+.current-weather-img {
+  width: 160px;
+  animation: zoomInOut 6s linear infinite;
+}
+
+@keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(0.85);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+.degree {
+  font-size: 54px;
+  color: var(--white);
+}
+
+#deg-celsius:hover,
+#deg-fahrenheit:hover {
+  color: #ffa500;
+}
+
+.details {
+  font-size: 18px;
+  color: var(--gray-color);
+  line-height: 1.8;
+}
+
+.humidity,
+.wind,
+.pressure {
+  border-bottom: 2px solid var(--white-alpha-40);
+  font-weight: 500;
+}

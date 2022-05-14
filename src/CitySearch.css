@@ -1,0 +1,83 @@
+:root {
+  --gray-color: #353434;
+  --white: #fff;
+  --white-alpha-40: rgba(243, 236, 236, 0.507);
+  --white-alpha-25: rgba(255, 255, 255, 0.144);
+}
+
+.cityName {
+  display: block;
+  padding: 10px 15px 0;
+  font-size: 45px;
+  font-family: "Fredericka the Great", cursive;
+  background: #f5f7f8;
+  background: -webkit-repeating-linear-gradient(
+    to right,
+    #d7eaf2 0%,
+    #a8dfff 50%,
+    #b0cfce 100%
+  );
+  background: -moz-repeating-linear-gradient(
+    to right,
+    #d7eaf2 0%,
+    #a8dfff 50%,
+    #b0cfce 100%
+  );
+  background: repeating-linear-gradient(
+    to right,
+    #d7eaf2 0%,
+    #a8dfff 50%,
+    #b0cfce 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+search {
+  float: right;
+  padding: 10px 5px;
+}
+
+.search-text {
+  padding: 10px 25px;
+  border-radius: 5px;
+  border-style: none;
+  border: 2px solid rgb(205, 214, 223);
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 400ms ease-in-out;
+}
+.search-text:hover {
+  border: 2px solid rgba(189, 203, 218, 0.473);
+  -webkit-box-shadow: 0px 0px 13px 5px rgba(241, 241, 241, 0.747);
+  box-shadow: 0px 0px 14px 5px rgba(255, 255, 255, 0.74);
+}
+
+.search-btn {
+  margin-left: 4px;
+}
+
+.search-btn,
+#current-location {
+  background-color: rgba(255, 255, 255, 0.212);
+  padding: 10px 15px;
+  border-radius: 7px;
+  border-style: none;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.search-btn:hover,
+#current-location:hover {
+  color: var(--white);
+  background-color: var(--white-alpha-40);
+}
+
+.search-icon {
+  color: #fff;
+  font-size: 20px;
+}
+
+.location-icon {
+  color: var(--white);
+  font-size: 20px;
+}

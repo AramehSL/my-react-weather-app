@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Weather.css";
 
-export default function Weather() {
+export default function Weather(props) {
   let weatherData = {
     tempreture: 17,
     date: "09-04-2022",
@@ -37,7 +37,7 @@ export default function Weather() {
 
         <div className="col-3">
           <div className="current-tempreture">
-            <span className="degree"> {weatherData.tempreture}</span>
+            <span className="degree"> {}</span>
             <a href="/" className="deg-celsius">
               °C
             </a>
